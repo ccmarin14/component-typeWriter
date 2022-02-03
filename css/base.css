@@ -1,0 +1,76 @@
+:root {
+    --lightOrange:hsl(15, 100%, 70%); /*work*/
+    --softBlue:hsl(195, 46%, 67%); /*play*/
+    --lightRed:hsl(348, 100%, 68%); /*study*/
+    --limeGreen:hsl(145, 58%, 55%); /*exercise*/
+    --violet:hsl(264, 64%, 52%); /*social*/
+    --softOrange:hsl(43, 84%, 65%); /*self care*/
+    --veryDarkBlue:hsl(226, 43%, 10%);
+    --darkBlue:hsl(235, 46%, 20%);
+    --desaturatedBlue: hsl(235, 45%, 61%);
+    --paleBlue:hsl(236, 100%, 87%);
+}
+
+body {
+    display: flex;
+    height: 95vh;
+    background-color: var(--softBlue);
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 30%;
+    height: 140px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 3px rgba(12, 12, 12, 0.5);
+}
+
+.proyector p {
+    margin: 0;
+    text-align: center;
+    font-family: monospace, monospace;
+    font-size: 50px;
+}
+
+.proyector p span {
+    display: none;
+    margin: 0 auto 0 auto;
+    white-space: nowrap;
+    border-right: 4px solid;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    animation-delay: 0s,0s,3s;
+}
+
+.html {
+    width: 4ch;
+    animation: typing 2s steps(4), blink .5s infinite step-end alternate, typing 2s steps(4) reverse;
+}
+
+.css {
+    width: 3ch;
+    animation: typing 2s steps(3), blink .5s infinite step-end alternate, typing 2s steps(3) reverse;
+}
+
+.javascript {
+    width: 10ch;
+    animation: typing 2s steps(10), blink .5s infinite step-end alternate, typing 2s steps(10) reverse;
+}
+
+.active {
+    display: block !important;
+}
+
+@keyframes typing {
+    from { width: 0}
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+
+
+
