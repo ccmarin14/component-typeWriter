@@ -36,7 +36,7 @@ const execTask = async () => {
 const bucle = () => {
     for (let i = 1; i < 9999; i++) {
         setTimeout(() => execTask(),time)
-        time += 5500;
+        time += 6000;
         if (i % 3 == 0) {
         } else {
         
